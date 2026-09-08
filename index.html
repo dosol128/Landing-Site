@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apex Sound — Wireless Pods</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="navbar">
+    <div class="nav-container">
+      <!-- Clicking logo scrolls back to the main Hero section -->
+      <a href="#hero" class="logo">
+        <span class="logo-main">APEX</span> <span class="logo-sub">SOUND</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#specs">Specs</a></li>
+          <li><a href="#discount" class="nav-btn">Get Coupon</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- PART 1: MAIN PRODUCT SECTION -->
+    <section id="hero" class="hero">
+      <span class="hero-badge">⚡ NEXT-GEN AUDIO</span>
+      <h1 class="hero-title">Experience Sound Without Limits.</h1>
+      <p class="hero-subtitle">Ultra-lightweight wireless earbuds featuring active noise cancellation and 30-hour battery life.</p>
+      <div> <figure class="hero-image">
+        <img src="asset/headphone image(2).png" alt="Apex Wireless Pods" />
+      </figure>
+      </div>
+      <div class="hero-actions">
+        <a href="#discount" class="btn btn-primary">Claim 15% Off</a>
+        <a href="#specs" class="btn btn-secondary">View Specs ↓</a>
+      </div>
+    </section>
+
+    <!-- PART 2: PRODUCT SPECS SECTION -->
+    <section id="specs" class="specs-section">
+      <header class="section-header">
+        <span class="badge">Engineered For Quality</span>
+        <h2>3 Reasons To Choose Apex</h2>
+      </header>
+
+      <div class="specs-container">
+        <article class="feature">
+          <span class="spec-number">01</span>
+          <h3>Pure Noise Control</h3>
+          <p>Active Noise Cancellation blocks unwanted background noise so you hear only your music.</p>
+        </article>
+
+        <article class="feature">
+          <span class="spec-number">02</span>
+          <h3>30-Hour Battery</h3>
+          <p>Enjoy up to 8 hours of playback on a single charge, plus 22 extra hours with the compact case.</p>
+        </article>
+
+        <article class="feature">
+          <span class="spec-number">03</span>
+          <h3>Water Resistant</h3>
+          <p>IPX5 sweat and splash resistance keeps your music going during workout sessions.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PART 3: DISCOUNT & COUPON SIGN-UP SECTION -->
+    <section id="discount" class="discount-section">
+      <article class="discount-card">
+        <header class="discount-header">
+          <span class="badge-discount">LIMITED TIME OFFER</span>
+          <h2>Unlock Your 15% Discount</h2>
+          <p>Enter your email below to receive your exclusive coupon code instantly.</p>
+        </header>
+
+        <form class="discount-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Coupon Code APEX15 Sent!');">
+          <p class="form-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Alex Morgan" required />
+          </p>
+
+          <p class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="alex@example.com" required />
+          </p>
+
+          <button type="submit" class="submit-btn">Send My Coupon Code</button>
+          <small class="form-footnote">We respect your privacy. Unsubscribe at any time.</small>
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Apex Sound Tech. Built with W3Schools CSS Standards.</p>
+  </footer>
+
+</body>
+</html>
